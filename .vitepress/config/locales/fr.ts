@@ -91,7 +91,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [{ text: "Template", link: "frontweb/index" }],
     },
     {
-      text: "back-end",
+      text: "backend",
       collapsed: false,
       items: [{ text: "Installation", link: "backend/index" }],
     },
