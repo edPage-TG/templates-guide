@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: Docs
+  name: Template
   text: Documentation
   tagline: Documentation template.
   image:
@@ -15,7 +15,7 @@ hero:
       text: Getting started →
       link: /en/guide/getting-started
 
-features:
+/*features:
   - icon: 📊
     title: Title
     details: Description
@@ -24,5 +24,5 @@ features:
     details: Description
   - icon: 🖥️
     title: Title
-    details: Description
+    details: Description*/
 ---

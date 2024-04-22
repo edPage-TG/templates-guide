@@ -45,14 +45,22 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarGuide(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Introduction',
+      text: "Introduction",
       collapsed: false,
-      items: [{ text: 'Getting started', link: 'getting-started' }],
+      items: [
+        { text: "start", link: "getting-started" },
+        { text: "Configuration", link: "configuration" },
+      ],
     },
     {
-      text: 'Others',
+      text: "Frontend-Web",
       collapsed: false,
-      items: [{ text: 'About', link: 'about' }],
+      items: [{ text: "Template", link: "frontweb/index" }],
+    },
+    {
+      text: "backend",
+      collapsed: false,
+      items: [{ text: "Installation", link: "backend/index" }],
     },
   ]
 }
