@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: Docs
+  name: Template
   text: Documentation
   tagline: Documentation template.
   image:

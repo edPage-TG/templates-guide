@@ -1,15 +1,15 @@
-import { type DefaultTheme, defineConfig } from 'vitepress'
+import { type DefaultTheme, defineConfig } from "vitepress";
 
 export const fr = defineConfig({
-  lang: 'fr-FR',
-  description: 'Template de documentation.',
+  lang: "fr-FR",
+  description: "Template de documentation.",
 
   themeConfig: {
     nav: nav(),
-    siteTitle: 'Documentation',
+    siteTitle: "Documentation",
 
     sidebar: {
-      '/guide/': { base: '/guide/', items: sidebarGuide() },
+      "/guide/": { base: "/guide/", items: sidebarGuide() },
     },
 
     footer: {
@@ -18,96 +18,104 @@ export const fr = defineConfig({
     },
 
     docFooter: {
-      prev: 'Page précédente',
-      next: 'Page suivante',
+      prev: "Page précédente",
+      next: "Page suivante",
     },
 
     outline: {
-      label: 'Sur cette page',
+      label: "Sur cette page",
     },
 
     lastUpdated: {
-      text: 'Mis à jour le',
+      text: "Mis à jour le",
       formatOptions: {
-        dateStyle: 'short',
-        timeStyle: 'short',
+        dateStyle: "short",
+        timeStyle: "short",
       },
     },
 
-    langMenuLabel: 'Changer de langue',
-    returnToTopLabel: 'Retour au début de la page',
-    sidebarMenuLabel: 'Menu',
-    darkModeSwitchLabel: 'Passer an thème sombre',
-    lightModeSwitchTitle: 'Passer au thème clair',
-    darkModeSwitchTitle: 'Apparence',
+    langMenuLabel: "Changer de langue",
+    returnToTopLabel: "Retour au début de la page",
+    sidebarMenuLabel: "Menu",
+    darkModeSwitchLabel: "Passer an thème sombre",
+    lightModeSwitchTitle: "Passer au thème clair",
+    darkModeSwitchTitle: "Apparence",
 
     notFound: {
-      title: 'PAGE NON TROUVEE',
+      title: "PAGE NON TROUVEE",
       quote:
-        'Mais si vous ne changez pas de direction et si vous continuez à regarder, vous risquez de vous retrouver là où vous allez.',
+        "Mais si vous ne changez pas de direction et si vous continuez à regarder, vous risquez de vous retrouver là où vous allez.",
       linkLabel: "aller à l'accueil",
       linkText: "Me ramener à l'accueil",
-      code: '404',
+      code: "404",
     },
   },
-})
+});
 
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: 'Lire la documentation',
-      link: '/guide/getting-started',
-      activeMatch: '/guide/',
+      text: "Lire la documentation",
+      link: "/guide/getting-started",
+      activeMatch: "/guide/",
     },
     {
-      text: 'v1.0.0',
+      text: "v1.0.0",
       items: [
         {
-          text: 'Nouveautés',
-          link: '#',
+          text: "Nouveautés",
+          link: "#",
         },
         {
-          text: 'Signaler un problème',
-          link: '#',
+          text: "Signaler un problème",
+          link: "#",
         },
       ],
     },
-  ]
+  ];
 }
 
 function sidebarGuide(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Introduction',
+      text: "Introduction",
       collapsed: false,
-      items: [{ text: 'Pour commencer', link: 'getting-started' }],
+      items: [
+        { text: "Pour commencer", link: "getting-started" },
+        { text: "Configuration", link: "configuration" },
+      ],
     },
     {
-      text: 'Autres',
+      text: "Frontend-Web",
       collapsed: false,
-      items: [{ text: 'A propos', link: 'about' }],
+      items: [{ text: "Template", link: "frontweb/index" }],
     },
-  ]
+    {
+      text: "back-end",
+      collapsed: false,
+      items: [{ text: "Installation", link: "backend/index" }],
+    },
+  ];
 }
 
-export const search: DefaultTheme.LocalSearchOptions['locales'] = {
+export const search: DefaultTheme.LocalSearchOptions["locales"] = {
   fr: {
     translations: {
       button: {
-        buttonText: 'Rechercher',
-        buttonAriaLabel: 'Rechercher',
+        buttonText: "Rechercher",
+        buttonAriaLabel: "Rechercher",
       },
       modal: {
-        displayDetails: 'Afficher la liste détaillée',
-        backButtonTitle: 'Retour',
+        displayDetails: "Afficher la liste détaillée",
+        backButtonTitle: "Retour",
         noResultsText: "Aucun résultat n'a été trouvé",
-        resetButtonTitle: 'Réinitialiser la recherche',
+        resetButtonTitle: "Réinitialiser la recherche",
         footer: {
-          selectText: 'sélectionner',
-          navigateText: 'naviguer',
-          closeText: 'fermer',
+          selectText: "sélectionner",
+          navigateText: "naviguer",
+          closeText: "fermer",
         },
       },
     },
   },
-}
+};

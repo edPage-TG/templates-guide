@@ -23,5 +23,8 @@
   "devDependencies": {
     "gh-pages": "^6.1.1",
     "vitepress": "1.0.0-rc.42"
+  },
+  "dependencies": {
+    "vue": "^3.4.23"
   }
 }
