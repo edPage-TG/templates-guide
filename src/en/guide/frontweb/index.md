@@ -5,12 +5,6 @@
    - Adapter les styles de l'interface de l'application aux couleurs primaires et secondaires du logo
 
 ---
-::: info
-
-Adapter les styles de l'interface de l'application aux couleurs primaires et secondaires du logo
-:::
-
-
 
 
 ## Autres

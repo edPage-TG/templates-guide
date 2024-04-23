@@ -82,7 +82,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: "Pour commencer", link: "getting-started" },
-        { text: "Configuration", link: "configuration" },
       ],
     },
     {

@@ -11,7 +11,7 @@ export default defineConfig({
       { text: 'Examples', link: '/markdown-examples' },
       { text: 'About', link: 'https://github.com/' }
     ],
-
+ 
     sidebar: [
       {
         text: 'Examples',
