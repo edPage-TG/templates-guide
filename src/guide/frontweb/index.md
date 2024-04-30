@@ -1,14 +1,9 @@
+# Adaptation Template
 
-## Correction Template
----
    - Placer les images et icons du logo dans le repertoire ./src/assets/images
    - Adapter les styles de l'interface de l'application aux couleurs primaires et secondaires du logo
 
----
-::: info
 
-Adapter les styles de l'interface de l'application aux couleurs primaires et secondaires du logo
-:::
 
 
 
