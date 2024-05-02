@@ -1,0 +1,14 @@
+import{_ as e,c as s,o as i,V as t}from"./chunks/framework.C5AjMrxx.js";const f=JSON.parse('{"title":"Definition des Types Utilisateurs et rôles","description":"","frontmatter":{},"headers":[],"relativePath":"guide/frontweb/authentification.md","filePath":"guide/frontweb/authentification.md"}'),a={name:"guide/frontweb/authentification.md"},n=t(`<h1 id="definition-des-types-utilisateurs-et-roles" tabindex="-1">Definition des Types Utilisateurs et rôles <a class="header-anchor" href="#definition-des-types-utilisateurs-et-roles" aria-label="Permalink to &quot;Definition des Types Utilisateurs et rôles&quot;">​</a></h1><pre><code>Il faut définir les types d&#39;utilisateurs
+avec leur rôles dans la gestion de l&#39;application
+
+Les étapes à suivre: 
+
+- src\\enums\\profile-type : On énumère les types de profile
+</code></pre><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>     typeProfile = &#39;App\\\\Models\\\\typeProfile&#39;,</span></span></code></pre></div><pre><code>- src\\composable\\profile-type : creer le type de  profile
+</code></pre><div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> typeProfileTypeLabel</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> appSettingStore.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">getSettingValue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">  &quot;typeProfileTypeLabel&quot;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">as</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">;</span></span></code></pre></div><pre><code>- src\\views\\infoPortal : Par defaut nous avons la vue Admin qui
+est retournée. On se base sur cette vue pour créer la vue du type
+de profil créer et faire les modifications néccessaires ainsi
+que dans l&#39;index.
+</code></pre>`,6),l=[n];function p(r,o,d,h,c,u){return i(),s("div",null,l)}const g=e(a,[["render",p]]);export{f as __pageData,g as default};
