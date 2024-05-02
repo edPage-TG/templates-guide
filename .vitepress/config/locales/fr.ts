@@ -9,29 +9,29 @@ export const fr = defineConfig({
     siteTitle: "Documentation",
 
     sidebar: {
-      "/guide/": { base: "/guide/", items: sidebarGuide() },
+      "/guide/": { base: "/guide/", items: sidebarGuide() }
     },
 
     footer: {
       // message: 'Application de gestion scolaire.',
-      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://edpage.net" target="_blank">edPage</a>`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://edpage.net" target="_blank">edPage</a>`
     },
 
     docFooter: {
       prev: "Page précédente",
-      next: "Page suivante",
+      next: "Page suivante"
     },
 
     outline: {
-      label: "Sur cette page",
+      label: "Sur cette page"
     },
 
     lastUpdated: {
       text: "Mis à jour le",
       formatOptions: {
         dateStyle: "short",
-        timeStyle: "short",
-      },
+        timeStyle: "short"
+      }
     },
 
     langMenuLabel: "Changer de langue",
@@ -47,9 +47,9 @@ export const fr = defineConfig({
         "Mais si vous ne changez pas de direction et si vous continuez à regarder, vous risquez de vous retrouver là où vous allez.",
       linkLabel: "aller à l'accueil",
       linkText: "Me ramener à l'accueil",
-      code: "404",
-    },
-  },
+      code: "404"
+    }
+  }
 });
 
 function nav(): DefaultTheme.NavItem[] {
@@ -57,21 +57,21 @@ function nav(): DefaultTheme.NavItem[] {
     {
       text: "Lire la documentation",
       link: "/guide/getting-started",
-      activeMatch: "/guide/",
+      activeMatch: "/guide/"
     },
     {
       text: "v1.0.0",
       items: [
         {
           text: "Nouveautés",
-          link: "#",
+          link: "#"
         },
         {
           text: "Signaler un problème",
-          link: "#",
-        },
-      ],
-    },
+          link: "#"
+        }
+      ]
+    }
   ];
 }
 
@@ -82,19 +82,25 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: "Pour commencer", link: "getting-started" },
-        { text: "Configuration", link: "configuration" },
-      ],
+        { text: "Configuration", link: "configuration" }
+      ]
     },
     {
       text: "Frontend-Web",
       collapsed: false,
-      items: [{ text: "Template", link: "frontweb/index" }],
+      items: [
+        { text: "Template", link: "frontweb/index" },
+        { text: "Authentification", link: "frontweb/authentification" }
+      ]
     },
     {
       text: "backend",
       collapsed: false,
-      items: [{ text: "Installation", link: "backend/index" }],
-    },
+      items: [
+        { text: "Installation", link: "backend/index" },
+        { text: "Authentification", link: "backend/authentification" }
+      ]
+    }
   ];
 }
 
@@ -103,7 +109,7 @@ export const search: DefaultTheme.LocalSearchOptions["locales"] = {
     translations: {
       button: {
         buttonText: "Rechercher",
-        buttonAriaLabel: "Rechercher",
+        buttonAriaLabel: "Rechercher"
       },
       modal: {
         displayDetails: "Afficher la liste détaillée",
@@ -113,9 +119,9 @@ export const search: DefaultTheme.LocalSearchOptions["locales"] = {
         footer: {
           selectText: "sélectionner",
           navigateText: "naviguer",
-          closeText: "fermer",
-        },
-      },
-    },
-  },
+          closeText: "fermer"
+        }
+      }
+    }
+  }
 };
